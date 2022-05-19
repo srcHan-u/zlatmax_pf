@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Верстка «5.zlatmax»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «5.zlatmax»</h1>
+		<div class="rootpage__info info-rootpage">
+			<div class="rootpage__title">Особенности проекта</div>
+			<div class="info-rootpage__cards cards-info">
+				<article class="cards-info__item item-card">
+					<div class="item-card__image">
+						<img src="img/root-page/bem.jpeg" alt="image" />
+					</div>
+					<div class="item-card__body">
+						<div class="item-card__title">BEM - nesting</div>
+						<p class="item-card__text">
+							Компонентный подход к веб-разработке. В его основе лежит принцип
+							разделения интерфейса на независимые блоки. Он позволяет легко и
+							быстро разрабатывать интерфейсы любой сложности и повторно
+							использовать существующий код, избегая «Copy-Paste».
+						</p>
+					</div>
+				</article>
+				<article class="cards-info__item item-card">
+					<div class="item-card__image">
+						<img src="img/root-page/responsive.png" alt="image" />
+					</div>
+					<div class="item-card__body">
+						<div class="item-card__title">Responsive design</div>
+						<p class="item-card__text">
+							Отзывчивая вёрстка меняет дизайн страницы в зависимости от
+							поведения пользователя, платформы, размера экрана и ориентации
+							девайса.
+						</p>
+						<p class="item-card__text">
+							Для создания отзывчивых макетов используются медиазапросы и
+							относительные размеры элементов сетки, заданные с помощью %.
+						</p>
+						<p class="item-card__text">
+							Отзывчивый дизайн — один макет для всех устройств.
+						</p>
+					</div>
+				</article>
+				<article class="cards-info__item item-card">
+					<div class="item-card__image">
+						<img src="img/root-page/gulp&webpack.jpg" alt="image" />
+					</div>
+					<div class="item-card__body">
+						<div class="item-card__title">Webpack & Gulp</div>
+						<p class="item-card__text">
+							Современные технологии использующиеся для быстрой, надёжной, комфортной разработки.
+							Упрощающие рутинные процессы, тем самым, повышая скорость создания веб-сайтов.
+							Имея в своём арсенале огромное количество плагинов/расширений, позволяет решать большинство задач, таких как:
+						<ul>
+							<li>1. Оптимизация изображений</li>
+							<li>2. Конвертирование шрифтов и сжатие</li>
+							<li>3. Проставление перфиксов</li>
+							<li>4. Работа с svg</li>
+						</ul>
+						И многое другое.
+						</p>
+					</div>
+				</article>
+				<article class="cards-info__item item-card">
+					<div class="item-card__image">
+						<img src="img/root-page/optimization.png" alt="image" />
+					</div>
+					<div class="item-card__body">
+						<div class="item-card__title">Optimization</div>
+						<p class="item-card__text">
+						<ul>
+							<li>1. Оптимизация изображений, видео, gif</li>
+							<li>2. Уменьшение размера шрифтов</li>
+							<li>3. Использование иконочного шрифта</li>
+							<li>4. Минимизация css, js</li>
+						</ul>
+						</p>
+					</div>
+				</article>
+			</div>
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="catalog.html">Каталог</a></li>
+			<li><a target="_blank" href="product.html">Карточка товара</a></li>
+		</ol>
+		<h2>Попапы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#"></a></li>
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+			<p>Буду рад хорошему отзыву.</p>
+			<p>Обращайтесь еще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>
+				Почта: <a href="mailto:boikoale97@gmail.com">boikoale97@gmail.com</a>
+			</p>
+			<p>Телефон: <a href="tel:380939114778">+38093-911-47-78</a></p>
+			<p>Telegram: <a href="">https://t.me/HanShark</a></p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		background-color: #1f119c74;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__info .info-rootpage {}
+
+	.rootpage__title {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.info-rootpage__cards {
+		padding-bottom: 10px;
+		margin-bottom: 60px;
+	}
+
+	.cards-info {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 20px;
+	}
+
+	.cards-info__item {}
+
+	.item-card {
+		background-color: #fff;
+		box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+		border-radius: 6px;
+		overflow: hidden;
+		height: 100%;
+		transition: box-shadow 0.4s ease 0s;
+	}
+
+	@media (any-hover: hover) {
+		.cards-info__item:hover {
+			box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	.item-card__image {
+		position: relative;
+		padding-bottom: 60%;
+	}
+
+	.item-card__image>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+	}
+
+	.item-card__body {
+		color: #000;
+		padding: 25px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		row-gap: 25px;
+	}
+
+	.item-card__title {
+		font-size: 22px;
+		font-weight: 600;
+		width: auto;
+		flex: 1 1 auto;
+		flex-wrap: wrap;
+		word-wrap: break-word;
+	}
+
+	.item-card__text {
+		line-height: 130%;
+	}
+
+	.item-card__body ul li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+</style>
+
+</html>
